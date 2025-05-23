@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Crypto Ticker</title>
   <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
   <style>
     body {
       background-color: #0d1117;
       margin: 0;
-      padding: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
-    #coinmarketcap-widget-marquee {
-      max-width: 100%;
+
+    .ticker-container {
       width: 90%;
+      max-width: 1200px;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #161b22;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
   </style>
 </head>
 <body>
-  <div id="coinmarketcap-widget-marquee"
-       coins="1,1027,1975,5426,20947"
-       currency="USD"
-       theme="dark"
-       transparent="true"
-       show-symbol-logo="true"></div>
+  <div class="ticker-container">
+    <div id="coinmarketcap-widget-marquee"
+         coins="1,1027,1975,5426,20947"
+         currency="USD"
+         theme="dark"
+         transparent="true"
+         show-symbol-logo="true">
+    </div>
+  </div>
 </body>
 </html>
